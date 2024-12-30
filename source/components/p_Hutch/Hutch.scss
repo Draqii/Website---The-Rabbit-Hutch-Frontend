@@ -1,0 +1,73 @@
+@import "../../styles/branding.scss";
+
+.hw_hutch {
+
+    img {
+        width: 70px;
+        height: fit-content;
+    }
+
+    &__cleanimg {
+        object-fit: cover;
+        height: initial !important;
+        border-radius: 8px;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    &__rabbithayimg {
+        width: 100% !important;
+        max-height: 160px;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+
+    &__intro {
+        text-align: center;
+    }
+
+    &__interior {
+        justify-content: center;
+        @media only screen and (min-width: 768px) {
+            .hw_section {
+                width: calc(50% - 20px);
+            }
+        }
+        @media only screen and (min-width: 1440px) {
+            .hw_section {
+                width: calc(20% - 20px);
+            }
+        }
+    }
+
+    &__danger {
+        justify-content: center;
+        @media only screen and (min-width: 768px) {
+            .hw_hutch__dangerchild {
+                justify-content: center;
+                width: calc(50% - 20px);
+            }
+        }
+    }
+
+    &__toilets {
+        justify-content: center;
+        .hw_section {
+            width: 100%;
+        }
+        @media only screen and (min-width: 768px) {
+            .hw_section {
+                width: calc(50% - 20px);
+            }
+        }
+    }
+
+    &__cleaning {
+        justify-content: center;
+        @media only screen and (min-width: 768px) {
+            .hw_hutch__cleaningchild {
+                width: calc(33% - 20px);
+            }
+        }
+    }
+
+}

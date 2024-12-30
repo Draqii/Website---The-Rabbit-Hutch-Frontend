@@ -1,0 +1,24 @@
+@import "./branding.scss";
+
+.hw_header {
+    background-color: $color-secondary-faded;
+}
+
+.hw_navigation {
+    .hw_navlink .hw_svgicon__fill { fill: $color-primary-dark }
+    .hw_navlink--active .hw_svgicon__fill { fill: $color-secondary }
+    .hw_icon { border-color: $color-primary-dark }
+    .hw_navlink--active .hw_icon { border-color: $color-secondary }
+}
+
+.hw_navlink--active {
+    color: $color-secondary;
+}
+.hw_logo__secondary {
+    color: $color-secondary;
+}
+.hw_footer {
+    background-color: $color-secondary;
+    .hw_backtotop__text { color: $color-primary-light;}
+    .hw_svg__fill { fill: $color-primary-light; }
+}

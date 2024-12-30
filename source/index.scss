@@ -1,0 +1,37 @@
+@import "./styles/branding.scss";
+
+.hw_navlink {
+    .hw_svgicon__fill {
+        fill: $color-primary-dark !important;
+    }
+    svg {
+        margin-top: 2px;
+        padding-bottom: 1px;
+        border-width: 2.5px !important;
+        border-color: $color-primary-dark !important;   
+    }
+}
+.hw_navlink--active {
+    color: $color-secondary;
+    .hw_svgicon__fill {
+        fill: $color-secondary !important;
+    }
+    svg {
+        border-color: $color-secondary !important;   
+    }
+}
+
+.hw_footer {
+    .hw_backtotop__text { color: $color-primary-light !important;}
+    .hw_svg__fill { fill: $color-primary-light; }
+    .hw_copyright p {
+        color: $color-primary-light;
+    }
+    .hw_heading {
+        color: $color-primary-light
+    }
+    @media only screen and (max-width: 744px) {
+        .hw_navigation a { color: $color-primary-dark;}
+    }
+    .hw_navigation a { color: $color-primary-light;}
+}

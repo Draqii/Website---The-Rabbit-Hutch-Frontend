@@ -1,0 +1,35 @@
+@import "../../styles/branding.scss";
+
+.hw_feeding {
+    h2 {
+        text-align: left;
+    }
+    img {
+        width: 100%;
+        border-radius: 6px;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4); 
+        aspect-ratio: 1;
+        object-fit: cover;
+        -webkit-user-drag: none;
+    }
+    &__herb {
+        width: 200px;
+    }
+    &__grade {
+        user-select: none;
+        cursor: default;
+        padding: 20px;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4); 
+        width: calc(50% - 60px);
+    }
+    .a {
+        background-color: rgb(189, 255, 180);
+    }
+    .c {
+        background-color: rgb(255, 231, 180);
+    }
+    .f {
+        background-color: rgb(255, 180, 180);
+    }
+    
+}

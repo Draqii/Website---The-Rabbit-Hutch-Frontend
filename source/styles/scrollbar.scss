@@ -1,0 +1,21 @@
+@import "./branding.scss";
+
+/* width */
+::-webkit-scrollbar {
+    width: 16px;
+    opacity: 0.5;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $color-secondary-faded;
+    border-radius: 2px;
+    opacity: 0.5;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $color-secondary;
+    border-radius: 2px;
+    opacity: 0.5;
+  }

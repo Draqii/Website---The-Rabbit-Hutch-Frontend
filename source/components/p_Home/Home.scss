@@ -1,0 +1,55 @@
+@import "../../styles/branding.scss";
+
+.hw_home {
+    &__teaserimg {
+        max-height: 200px;
+        aspect-ratio: 3/4;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .hw_paragraph {
+        text-align: center;
+    }
+    &__sections {
+        justify-content: center;
+    }
+    &__quartersections {
+        .hw_home__section {
+            width: 25%;
+
+            .hw_button {
+                margin-top: auto;
+            }
+        }
+        @media only screen and (max-width: 1440px) {
+            flex-direction: row;
+            .hw_home__section {
+                width: calc(50% - 40px) !important;
+            }
+        }
+        @media only screen and (max-width: 744px) {
+            flex-direction: column;
+            .hw_home__section {
+                width: 100% !important;
+            }
+        }
+        @media only screen and (min-width: 1440px) {
+            flex-direction: row;
+            .hw_home__section {
+                width: calc(25% - 40px) !important;
+            }
+        }
+    }
+    &__halfsections {
+        .hw_home__section {
+            width: 50% !important;
+        }
+
+        @media only screen and (max-width: 744px) {
+            flex-direction: column;
+            .hw_home__section {
+                width: 100% !important;
+            }
+        }
+    }
+}
